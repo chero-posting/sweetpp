@@ -1,0 +1,166 @@
+/*
+ESTE DOCUMENTO NO TIENE
+LA LICENCIA GPL 3.0 de la GNU...
+TIENE LICENCIA CC 0,
+ES DECIR, ES DE DOMINIO PÚBLICO,
+NADIE LA PUEDE RECLAMAR COMO DUEÑO.
+CUALQUIERA PUEDE USARLA.
+NO PIDO CRÉDITOS.
+GRACIAS POR LEER ESTE COMENTARIO,
+*/
+@media screen and (max-width: 1197px){
+	.grid{
+		width: 100%;
+		max-width: 1197;
+		display: grid;
+		grid-gap: 5px;
+		grid-template-areas: "f1"
+							 "f2"
+							 "f3";
+	}
+	.f1{
+		grid-area: f1;
+	}
+	.f2{
+		grid-area: f2;
+	}
+	.f3{
+		grid-area: f3;
+	}
+	.f1, .f2, .f3{
+		float: none;
+		width: 100%;
+		margin: 0% auto;
+		text-align: center;
+	}
+	.grid section img{
+		max-width: 200px;
+		height: auto;
+	}
+	.grid section h3{
+	 	padding: 1%;
+	}
+	#spp{
+		padding-top: 20px;
+	}
+}
+@media screen and (max-width: 1197px){
+	header{
+	background: #FFBEE8;
+	width: 100%;
+	height: 86px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0.90;
+	}
+}
+@media screen and (max-width: 768px){
+	body{
+		position: absolute;
+		font: 20px/20px 'Roboto', sans-serif;
+	}
+	body p{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	h3{
+		padding: 4px;
+		line-height: normal;
+	}
+	.menu-icon{
+       	display: block;
+       	width: 40px;
+       	height: 40px;
+       	margin: 10px;
+       	float: right;
+       	cursor: pointer;
+       	text-align: center;
+       	font-size: 30px;
+       	color: #9250FF;
+       	}
+
+       	.menu-icon:before{
+       		content: '\f0c9';
+       		font-family: fontAwesome;
+       		line-height: 40px;
+       	}
+
+       	.menu-icon.active:before{
+       		content: '\f00d';
+       	}
+}
+@media screen and (max-width: 768px){
+	header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+	section{
+		float: none;
+		width: 100%;
+		margin: 0% auto;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	nav ul, nav:active ul{
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #D353AE;
+		border: 1px solid #fff;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 1px 4px 4px;
+	}
+	nav li{
+		text-align: left;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	nav:hover ul{
+		display: block;
+		width: 20%;
+		text-align: left;
+	}
+	#mas{
+		text-align: justify;
+	}
+	.para{
+		text-align: justify;
+		padding-bottom: 2.2rem;
+	}
+	@media screen and (max-height: 360px){
+		header{
+			position: absolute;
+		}
+		nav ul, nav:active ul{
+			display: none;
+			position: absolute;
+			padding: 20px;
+			background: #D353AE;
+			border: 1px solid #fff;
+			right: 20px;
+			top: 60px;
+			width: 50%;
+			border-radius: 4px 1px 4px 4px;
+		}
+		nav li{
+			text-align: left;
+			width: 100%;
+			padding: 10px 0;
+			margin: 0;
+		}
+		nav:hover ul{
+			display: block;
+			width: 20%;
+			text-align: left;
+		}
+		#mas, .para{
+			text-align: justify;
+		}
+	}
